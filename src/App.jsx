@@ -1,10 +1,11 @@
 
+import Home from "./Home/home"
 
 function App() {
 
   return (
     <>
-      <p>WELCOME TO THE OFFICIAL WEBPAGE OF ASSOCIATION FOR THE PROMOTION OF HERITAGE AND CULTURE OF EKO INDIGENES.</p>
+        <Home/>
     </>
   )
 }
