@@ -1,6 +1,15 @@
 
+@font-face {
+    font-family: montserrat;
+    src: url("./fonts/Montserrat-VariableFont_wght.ttf");
+}
+html,body,#root{
+    overflow-x: hidden;
+}
+
 *{
     box-sizing: border-box;
+    font-family: montserrat;
 }
 
 #home-container{
@@ -27,8 +36,9 @@
             }
         }
         p{
-            font-size: 0.6rem;
+            font-size: 0.5rem;
             margin: 0px;
+            font-weight: 600;
         }
     }
     #nav-links-container{
@@ -36,6 +46,7 @@
         list-style: none;
         justify-content: space-around;
         width: 50%;
+        font-weight: 600;
         li{
             a{
                 text-decoration: none;
