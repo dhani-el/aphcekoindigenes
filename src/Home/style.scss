@@ -8,6 +8,8 @@
     position: relative;
     min-height: 100vh;
     width: 100vw;
+    display: flex;
+    flex-direction: column;
     #page-curtain{
         position: fixed;
         width: 20vw;
@@ -26,6 +28,7 @@
             font-weight: 600;
             font-size: 5rem;
             font-family: montserrat;
+            margin-bottom: 0px;
         }
     }
     #center-piece{
@@ -34,10 +37,104 @@
         display: flex;
         justify-content: space-around;
         .center-piece-item{
-            background-color: aquamarine;
             border: black solid 0.02rem;
             height: 45vh;
-            width: 20%;
+            width: 15%;
+            position: relative;
+            img{
+                width: 110%;
+                position: absolute;
+                bottom: -20px;
+                left: -20px;
+            }
+        }
+        .center-piece-item#Drum{
+            background-image: url("../assets//drumbg.png");
+            background-size: contain;
+        }
+        .center-piece-item#Danfo{
+            background-image: url("../assets//danfobg.png");
+            background-size: contain;
+            position: relative;
+        }
+        .center-piece-item#Eyo{
+            background-image: url("../assets//eyobg.png");
+            background-size: contain;
+            img{
+                width: 90%;
+                position: absolute;
+                bottom: -20px;
+                right: 0px;
+            }
+        }
+        .center-piece-item#Church{
+            background-image: url("../assets//churchbg.png");
+            background-size: contain;
+            overflow: hidden;
+        }
+    }
+    #mission-container{
+        width: 100%;
+        margin-top: 3rem;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+
+        h2{
+            text-align: center;
+        }
+        #a-mission-container{
+            width: 80%;
+            padding: 3rem;
+            align-self: flex-end;
+            // display: flex;
+            #image-container{
+                width: 30%;
+                img{
+                    width: 100%;
+                    border-radius: 0.5rem;
+                }
+            }
+            #text-container{
+                position: relative;
+                top: -100px;
+                left: 22%;
+                width: 50%;
+                border-radius: 0.5rem;
+                background-color: rgba(245, 245, 245, 0.607);
+                padding: 1rem;
+
+            }
+        }
+        #a-mission-container2{
+            width: 80%;
+            padding: 3rem;
+            align-self: flex-end;
+            padding-top: 0px;
+            // display: flex;
+            #image-container2{
+                width: 30%;
+                position: relative;
+                left: 40%;
+                img{
+                    width: 100%;
+                    border-radius: 0.5rem;
+                }
+            }
+            #text-container2{
+                position: relative;
+                top: -100px;
+                width: 50%;
+                border-radius: 0.5rem;
+                background-color: rgba(245, 245, 245, 0.607);
+                padding: 1rem;
+
+            }
+        }
+    }
+    #news-container{
+        h2{
+            text-align: center
         }
     }
 }
