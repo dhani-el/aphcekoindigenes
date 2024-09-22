@@ -1,7 +1,7 @@
 
 import "./style.scss"
 import { NavBar } from "../utils"
-
+import { PageCurtain, FloatingText, CenterPiece, Mission,News } from "./components";
 
 
 
@@ -21,47 +21,7 @@ export default function Home(){
                 <NavBar lists={navigationData} />
                 <FloatingText/>
                 <CenterPiece/>
-    </div>
-}
-
-function PageCurtain(){
-    return <div id="page-curtain">
-
-    </div>
-}
-
-function FloatingText(){
-    return <div id="floating-text-container">
-                <p>Èkó</p>
-        </div>
-}
-
-function CenterPiece(){
-    return <div id="center-piece">
-                <Danfo/>
-                <Drum/>
-                <Eyo/>
-                <Church/>
-    </div>
-}
-
-function Danfo(){
-    return <div className="center-piece-item" >
-
-    </div>
-}
-function Drum(){
-    return <div className="center-piece-item" >
-
-    </div>
-}
-function Eyo(){
-    return <div className="center-piece-item" >
-
-    </div>
-}
-function Church(){
-    return <div className="center-piece-item" >
-
+                <Mission/>
+                <News/>
     </div>
 }
