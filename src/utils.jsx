@@ -1,20 +1,21 @@
 
-import logo from "./assets/island.png";
+import logo from "./assets/logo.png";
 import "./index.scss";
 
 export function NavBar({lists}){
     return <header id="nav-container">
-                <Logo/>
-                <NavLinks lists={lists}/>
+                    <Logo/>
+                    <NavLinks lists={lists}/>
     </header>
 }
 
 export function Logo(){
     return <div id="logo-container">
                 <span id="island-image-container">
-                    <img src={logo} alt="The associations logo" />
+                    <a href="/">
+                        <img src={logo} alt="The associations logo" />
+                    </a>
                 </span>
-                <p>Promoting the heritage and culture of eko indigenes</p>
     </div>
 }
 
@@ -36,4 +37,10 @@ function ANavLink({navItem}){
                     </p>
                 </a>
     </li>
+}
+
+function SideNav(){
+    return <div>
+        
+    </div>
 }

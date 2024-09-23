@@ -103,7 +103,9 @@ export function News({news}){
                 {
                    news.map(function(info){
                              return <swiper-slide  style={{width:"fit-content"}}>
+                                        <a href={info.url}>
                                             <NewsItem data={info} />
+                                        </a>
                                      </swiper-slide>
                      })
                 }

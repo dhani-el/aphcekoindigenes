@@ -18,11 +18,13 @@ const navigationData = [
 const news = [
     {
         img:dummyMember,
-        title:"December 2024 Get together"
+        title:"December 2024 Get together",
+        url:"/news"
     },
     {
         img:dummyMember,
-        title:"December 2024 Get together"
+        title:"December 2024 Get together",
+        url:"/news"
     },
 ]
 
