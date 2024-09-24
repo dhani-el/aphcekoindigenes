@@ -28,10 +28,10 @@ export function FloatingText(){
 
 export function CenterPiece(){
     return <div id="center-piece">
-                {/* <Danfo/> */}
+                 <Danfo/> 
                 <Drum/>
-                {/* <Eyo/>
-                <Church/> */}
+                 <Eyo/>
+                <Church/> 
     </div>
 }
 function Danfo(){

@@ -18,9 +18,9 @@ const navItems = [
 
 export function NavBar({lists}){
     return <header id="nav-container">
+                    <SideNavigation items={navItems} />
                     <Logo/>
                     <NavLinks lists={lists}/>
-                    <SideNavigation items={navItems} />
     </header>
 }
 

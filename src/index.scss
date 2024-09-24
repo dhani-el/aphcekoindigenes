@@ -20,7 +20,7 @@ html,body,#root{
 #nav-container{
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    gap: 1.5rem;
     align-items: center;
     padding: 1rem 2.5rem;
     padding-right: 3rem;
@@ -80,7 +80,8 @@ html,body,#root{
 
     
     #nav-container{
-       
+       justify-content: space-between;
+       gap: 0px;
         #logo-container{
             width: 8%;
             #island-image-container{

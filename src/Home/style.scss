@@ -26,6 +26,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-top: 4rem;
         p{
             font-weight: 600;
             font-size: 4rem;
@@ -39,12 +40,11 @@
         display: flex;
         justify-content: space-around;
         .center-piece-item{
-            border: black solid 0.02rem;
             height: 25vh;
-            width: 45%;
+            width: 15%;
             position: relative;
             img{
-                width: 120%;
+                width: 130%;
                 position: absolute;
                 bottom: -20px;
                 left: -20px;
@@ -53,17 +53,27 @@
         .center-piece-item#Drum{
             background-image: url("../assets//drumbg.png");
             background-size: contain;
+            img{
+                bottom: 40px;
+                left: -10px;
+            }
         }
         .center-piece-item#Danfo{
             background-image: url("../assets//danfobg.png");
             background-size: contain;
             position: relative;
+            img{
+                width: 130%;
+                position: absolute;
+                bottom: -20px;
+                left: 5px;
+            }
         }
         .center-piece-item#Eyo{
             background-image: url("../assets//eyobg.png");
             background-size: contain;
             img{
-                width: 90%;
+                width: 130%;
                 position: absolute;
                 bottom: -20px;
                 right: 0px;
@@ -72,7 +82,12 @@
         .center-piece-item#Church{
             background-image: url("../assets//churchbg.png");
             background-size: contain;
-            overflow: hidden;
+            // overflow: hidden;
+            img{
+                width: 100%;
+                bottom: 0px;
+                left: 0px;
+            }
         }
     }
     #mission-container{
@@ -272,11 +287,24 @@
             .center-piece-item#Drum{
                 background-image: url("../assets//drumbg.png");
                 background-size: contain;
+                img{
+                    width: 110%;
+                    position: absolute;
+                    bottom: -20px;
+                    left: -20px;
+                }
+
             }
             .center-piece-item#Danfo{
                 background-image: url("../assets//danfobg.png");
                 background-size: contain;
                 position: relative;
+                img{
+                    width: 110%;
+                    position: absolute;
+                    bottom: -20px;
+                    left: -20px;
+                }
             }
             .center-piece-item#Eyo{
                 background-image: url("../assets//eyobg.png");
