@@ -102,7 +102,7 @@ export function News({news}){
     return <swiper-container ref={swiperElRef} slides-per-view="1" center={true} navigation="true" pagination="true" id="list-of-news" >
                 {
                    news.map(function(info){
-                             return <swiper-slide  style={{width:"fit-content"}}>
+                             return <swiper-slide  style={{width:"fit-content"}} key={`${info.url}`}>
                                         <a href={info.url}>
                                             <NewsItem data={info} />
                                         </a>
@@ -116,6 +116,12 @@ function NewsItem({data}){
     return <div id="single-news-item">
                 <img src={data.img}/>
                 <p>{data.title}</p>
+    </div>
+}
+
+export function NavigationItem({data}){
+    return <div id="navigation-item-container" >
+                <a href={data.url}><p>{data.title}</p></a>
     </div>
 }
 

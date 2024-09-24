@@ -24,7 +24,7 @@ const news = [
     {
         img:dummyMember,
         title:"December 2024 Get together",
-        url:"/news"
+        url:"/newws"
     },
 ]
 
