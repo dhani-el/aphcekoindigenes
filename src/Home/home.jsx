@@ -1,7 +1,8 @@
 
 import "./style.scss"
 import { NavBar } from "../utils"
-import { PageCurtain, FloatingText, CenterPiece, Mission,News } from "./components";
+import { PageCurtain, FloatingText, CenterPiece, Mission,News,Footer } from "./components";
+import dummyMember from "../assets/dummyMember.jpeg"
 
 
 
@@ -14,6 +15,19 @@ const navigationData = [
     {url:"/join",title:"Join"},
 ]
 
+const news = [
+    {
+        img:dummyMember,
+        title:"December 2024 Get together",
+        url:"/news"
+    },
+    {
+        img:dummyMember,
+        title:"December 2024 Get together",
+        url:"/newws"
+    },
+]
+
 export default function Home(){
 
     return <div id="home-container">
@@ -22,6 +36,7 @@ export default function Home(){
                 <FloatingText/>
                 <CenterPiece/>
                 <Mission/>
-                <News/>
+                <News news={news} />
+                <Footer data={navigationData}/>
     </div>
 }

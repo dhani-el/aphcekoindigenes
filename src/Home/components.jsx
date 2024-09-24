@@ -4,10 +4,12 @@ import eyo from "../assets/eyoOnly.png"
 import drum from "../assets/drumOnly.png"
 import church from "../assets/churchOnly.png"
 import dummyMember from "../assets/dummyMember.jpeg"
+import { NavLinks } from "../utils"
+import { register } from 'swiper/element/bundle';
+import { useRef } from "react"
 
 
-
-
+register()
 export function PageCurtain(){
     return <div id="page-curtain">
 
@@ -26,10 +28,10 @@ export function FloatingText(){
 
 export function CenterPiece(){
     return <div id="center-piece">
-                <Danfo/>
+                {/* <Danfo/> */}
                 <Drum/>
-                <Eyo/>
-                <Church/>
+                {/* <Eyo/>
+                <Church/> */}
     </div>
 }
 function Danfo(){
@@ -88,8 +90,44 @@ function Amission2(){
 }
 
 
-export function News(){
+export function News({news}){
     return <section id="news-container">
                 <h2>NEWS</h2>
+                <NewsList news={news}/>
     </section>
+}
+ function NewsList({news=[]}){
+    const swiperElRef = useRef(null);
+
+    return <swiper-container ref={swiperElRef} slides-per-view="1" center={true} navigation="true" pagination="true" id="list-of-news" >
+                {
+                   news.map(function(info){
+                             return <swiper-slide  style={{width:"fit-content"}} key={`${info.url}`}>
+                                        <a href={info.url}>
+                                            <NewsItem data={info} />
+                                        </a>
+                                     </swiper-slide>
+                     })
+                }
+            </swiper-container>
+}
+
+function NewsItem({data}){
+    return <div id="single-news-item">
+                <img src={data.img}/>
+                <p>{data.title}</p>
+    </div>
+}
+
+export function NavigationItem({data}){
+    return <div id="navigation-item-container" >
+                <a href={data.url}><p>{data.title}</p></a>
+    </div>
+}
+
+export function Footer({data}){
+    return <footer id="footer">
+                <NavLinks lists={data} />
+                <p id="copyright">&#169; Copyrights 2024  </p>
+    </footer>
 }
