@@ -28,10 +28,10 @@ export function FloatingText(){
 
 export function CenterPiece(){
     return <div id="center-piece">
-                <Danfo/>
+                {/* <Danfo/> */}
                 <Drum/>
-                <Eyo/>
-                <Church/>
+                {/* <Eyo/>
+                <Church/> */}
     </div>
 }
 function Danfo(){
@@ -128,6 +128,6 @@ export function NavigationItem({data}){
 export function Footer({data}){
     return <footer id="footer">
                 <NavLinks lists={data} />
-                <p>&#169; Copyrights 2024  </p>
+                <p id="copyright">&#169; Copyrights 2024  </p>
     </footer>
 }
