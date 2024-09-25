@@ -2,6 +2,7 @@
 import { NavBar } from "../utils";
 import { SendMesssageForm, GetInTouch } from "./component";
 import "./contact-style.scss";
+import { Footer } from "../Home/components";
 
 const navigationData = [
     {url:"/about",title:"About Us"},
@@ -23,5 +24,6 @@ export default function Contact(){
                         <SendMesssageForm/>
                     </div>
                 </div>
+                <Footer data={navigationData}/>
     </div>
 }
