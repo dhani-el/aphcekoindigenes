@@ -5,7 +5,7 @@ import "./index.scss";
 import { useRef } from 'react';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
-
+import { Link } from "react-router-dom";
 gsap.registerPlugin(useGSAP);
 
 const navItems = [
@@ -46,11 +46,11 @@ export function NavLinks({lists}){
 
 function ANavLink({navItem}){
     return <li>
-                <a href={navItem.url} >
+                <Link to={navItem.url} >
                     <p>
                         {navItem.title}
                     </p>
-                </a>
+                </Link>
     </li>
 }
 
