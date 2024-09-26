@@ -1,5 +1,5 @@
 
-import { NavBar } from "../utils";
+import { NavBar,NavigationItem } from "../utils";
 import { SendMesssageForm, GetInTouch } from "./component";
 import "./contact-style.scss";
 import { Footer } from "../Home/components";
@@ -11,9 +11,17 @@ const navigationData = [
     {url:"/join",title:"Join"},
 ]
 
+const navItems = [
+    <NavigationItem data={{url:"/",title:"Home"}} key={"Home"}/>,
+    <NavigationItem data={{url:"/about",title:"About Us"}} key={"About Us"}/>,
+    <NavigationItem data={{url:"/contact",title:"Contact"}} key={"Contact"}/>,
+    <NavigationItem data={{url:"/join",title:"Join"}} key={"Join"}/>,
+    <NavigationItem data={{url:"/support",title:"Support"}} key={"Support"}/>,
+]
+
 export default function Contact(){
     return <div id="contact-page">
-                <NavBar lists={navigationData}/>
+                <NavBar lists={navigationData} sideItems={navItems} />
                 <div id="contact-page-body">
                     <div id="contact-us-container">
                         <h2> Contact Us </h2>

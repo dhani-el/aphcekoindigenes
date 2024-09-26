@@ -50,6 +50,6 @@ export function SendMesssageForm(){
 
 export function Map(){
     return <div>
-        
+                <img src={"https://img.pintrest.com"} />
     </div>
 }
