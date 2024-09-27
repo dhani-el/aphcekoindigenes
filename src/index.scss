@@ -75,6 +75,46 @@ html,body,#root{
     }
 }
 
+#footer{
+    background-image: url("./assets/eyoFooter.jpeg");
+    width: 100%;
+    min-height: 35vh;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-size: cover;
+    #nav-links-container{
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+        font-weight: 600;
+        li{
+            width: 50%;
+            text-align: center;
+            a{
+                display: inline-block;
+                box-sizing: border-box;
+                text-decoration: none;
+                color: black;
+                text-align: center;
+                padding: 0.5rem;
+                border-radius: 0.5rem;
+                background-color: rgba(245, 245, 245, 0.668);
+            }
+        }
+    }
+    #copyright{
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        background-color: rgba(245, 245, 245, 0.668);
+    }
+}
+
+
 
 @media (orientation:"landscape") {
 
@@ -111,6 +151,32 @@ html,body,#root{
         }
         #side-navigation-container{
             display: none;
+        }
+    }
+
+    #footer{
+        background-image: url("./assets/eyoFooter.jpeg");
+        width: 100%;
+        min-height: 35vh;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        background-size: cover;
+        #nav-links-container{
+            display: flex;
+            list-style: none;
+            justify-content: space-around;
+            width: 100%;
+            font-weight: 600;
+            li{
+                width: fit-content;
+                a{
+                    text-decoration: none;
+                    color: black;
+                }
+            }
         }
     }
 }

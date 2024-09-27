@@ -1,7 +1,7 @@
 
 import "./style.scss"
-import { NavBar,NavigationItem } from "../utils"
-import { PageCurtain, FloatingText, CenterPiece, Mission,News,Footer } from "./components";
+import { NavBar,NavigationItem,Footer} from "../utils"
+import { PageCurtain, FloatingText, CenterPiece, Mission,News, } from "./components";
 import dummyMember from "../assets/dummyMember.jpeg"
 
 
