@@ -1,5 +1,5 @@
 import { HambergerMenu,CloseCircle } from "iconsax-react";
-import { NavigationItem } from "./Home/components";
+// import { NavigationItem } from "./Home/components";
 import logo from "./assets/logo.png";
 import "./index.scss";
 import { useRef } from 'react';
@@ -8,17 +8,11 @@ import { useGSAP } from '@gsap/react';
 import { Link } from "react-router-dom";
 gsap.registerPlugin(useGSAP);
 
-const navItems = [
-    <NavigationItem data={{url:"/home",title:"Home"}} key={"Home"}/>,
-    <NavigationItem data={{url:"/about",title:"About Us"}} key={"About Us"}/>,
-    <NavigationItem data={{url:"/contact",title:"Contact"}} key={"Contact"}/>,
-    <NavigationItem data={{url:"/join",title:"Join"}} key={"Join"}/>,
-    <NavigationItem data={{url:"/support",title:"Support"}} key={"Support"}/>,
-]
 
-export function NavBar({lists}){
+
+export function NavBar({lists=[],sideItems=[]}){
     return <header id="nav-container">
-                    <SideNavigation items={navItems} />
+                    <SideNavigation items={sideItems} />
                     <Logo/>
                     <NavLinks lists={lists}/>
     </header>
@@ -89,4 +83,8 @@ function SideNavigation({items=[]}){
     </div>
 }
 
-
+export function NavigationItem({data}){
+    return <div id="navigation-item-container" >
+                <a href={data.url}><p>{data.title}</p></a>
+    </div>
+}

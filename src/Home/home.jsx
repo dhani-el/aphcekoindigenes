@@ -1,10 +1,18 @@
 
 import "./style.scss"
-import { NavBar } from "../utils"
+import { NavBar,NavigationItem } from "../utils"
 import { PageCurtain, FloatingText, CenterPiece, Mission,News,Footer } from "./components";
 import dummyMember from "../assets/dummyMember.jpeg"
 
 
+
+const navItems = [
+    <NavigationItem data={{url:"/",title:"Home"}} key={"Home"}/>,
+    <NavigationItem data={{url:"/about",title:"About Us"}} key={"About Us"}/>,
+    <NavigationItem data={{url:"/contact",title:"Contact"}} key={"Contact"}/>,
+    <NavigationItem data={{url:"/join",title:"Join"}} key={"Join"}/>,
+    <NavigationItem data={{url:"/support",title:"Support"}} key={"Support"}/>,
+]
 
 
 const navigationData = [
@@ -32,7 +40,7 @@ export default function Home(){
 
     return <div id="home-container">
                 <PageCurtain/>
-                <NavBar lists={navigationData} />
+                <NavBar lists={navigationData} sideItems={navItems} />
                 <FloatingText/>
                 <CenterPiece/>
                 <Mission/>
