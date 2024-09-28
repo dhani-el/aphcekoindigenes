@@ -85,7 +85,7 @@ function SideNavigation({items=[]}){
 
 export function NavigationItem({data}){
     return <div id="navigation-item-container" >
-                <a href={data.url}><p>{data.title}</p></a>
+                <Link to={data.url}><p>{data.title}</p></Link>
     </div>
 }
 
