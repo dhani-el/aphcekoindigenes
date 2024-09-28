@@ -1,7 +1,8 @@
 
 
-import { NavBar,NavigationItem } from "../utils"
-import { Intro,Point,CallToAction,Founders } from "./component"
+import { NavBar,NavigationItem, Footer } from "../utils";
+import { Intro,Point,CallToAction,Founders,Works } from "./component";
+import "./style.scss";
 
 const navItems = [
     <NavigationItem data={{url:"/",title:"Home"}} key={"Home"}/>,
@@ -20,13 +21,15 @@ const navigationData = [
 ]
 
 export default function AboutUs(){
-    return <div>
+    return <div id="about-page-container">
                 <NavBar sideItems={navItems} lists={navigationData} />
-                <div>
+                <div id="about-body-container">
                     <Intro/>
                     <Point/>
-                    <CallToAction/>
+                    <Works/>
                     <Founders/>
+                    <CallToAction/>
+                    <Footer data={navigationData} />
                 </div>
     </div>
 }

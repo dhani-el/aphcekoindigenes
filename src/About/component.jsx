@@ -1,44 +1,45 @@
 
-
+import lagosBridge from "../assets/Lagosbridge.jpeg";
+import talkingdrum from "../assets/talkingdrum.jpeg";
 
 
 export function Intro(){
-    return <section>
-                <div>
-                    <h2>About Us</h2>
+    return <section id="intro-section">
+                <div id="text-div">
+                    <h1>About Us</h1>
                     <p>A Little About Us</p>
                 </div>
-
+                <div id="background-image-div">
+                </div>
     </section>
 }
 
 
 export function Point(){
-    return <div>
+    return <div id="main-point">
                 <Text/>
                 <Image/>
     </div>
 }
 
 function Text(){
-    return <p>
+    return <p id="text">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum architecto quidem necessitatibus veritatis eos vitae totam accusantium fugit incidunt iure, consequuntur facere suscipit mollitia labore neque esse. Eaque dolorum debitis recusandae atque perferendis aspernatur minus voluptatum totam cumque aut. Odit eius ullam eligendi accusamus voluptates?
     </p>
 }
 
 function Image(){
 
-    return <div>
-                <img/>
+    return <div id="image-container">
+                <img src={lagosBridge}/>
             </div>
 }
 
 export function CallToAction(){
     return <div id="ad-container">
                 <div id="background-image">
-                    <img src="" alt="background image of the association" />
                 </div>
-                <div>
+                <div id="overlapping-text-container">
                     <h2>Are You An Eko Indigen Who Resonates With Us?</h2>
                     <button>Join Us</button>
                 </div>
@@ -46,8 +47,9 @@ export function CallToAction(){
 }
 
 export function Founders({images=[]}){
-    return <div>
-                <h4>Meet the Founders</h4>
+    return <div id="founders-container">
+                <h2>Founders</h2>
+                <p>Meet Some of the Founding Members</p>
                 <div>
                     {
                         images.map(function(image){
@@ -56,4 +58,26 @@ export function Founders({images=[]}){
                     }
                 </div>
     </div>
+}
+
+export function Works(){
+    return <div id="works-container">
+        <h2>What We're Doing</h2>
+        <p>what are we currently doing as the the  association for the promotion of heritage and culture of Eko indigenes?</p>
+        <div id="case-studies">
+            <WorkCase image={talkingdrum}   title={"Example 1"} description={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, ipsa at nulla tempora cupiditate quis!"} />
+            <WorkCase image={talkingdrum}   title={"Example 2"} description={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, ipsa at nulla tempora cupiditate quis!"} />
+            <WorkCase image={talkingdrum}   title={"Example 3"} description={"Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, ipsa at nulla tempora cupiditate quis!"} />
+        </div>
+    </div>
+}
+
+function WorkCase({image,title,description}){
+    return <div className="work-case-container">
+                <div id="image-container">
+                    <img src={image}/>
+                </div>
+                <h4>{title}</h4>
+                <p>{description}</p>
+            </div>
 }

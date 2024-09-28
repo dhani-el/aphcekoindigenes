@@ -88,3 +88,11 @@ export function NavigationItem({data}){
                 <Link to={data.url}><p>{data.title}</p></Link>
     </div>
 }
+
+
+export function Footer({data}){
+    return <footer id="footer">
+                <NavLinks lists={data} />
+                <p id="copyright">&#169; Copyrights 2024  </p>
+    </footer>
+}

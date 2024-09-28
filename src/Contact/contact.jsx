@@ -1,8 +1,7 @@
 
-import { NavBar,NavigationItem } from "../utils";
+import { NavBar,NavigationItem,Footer } from "../utils";
 import { SendMesssageForm, GetInTouch } from "./component";
 import "./contact-style.scss";
-import { Footer } from "../Home/components";
 
 const navigationData = [
     {url:"/about",title:"About Us"},
@@ -14,7 +13,6 @@ const navigationData = [
 const navItems = [
     <NavigationItem data={{url:"/",title:"Home"}} key={"Home"}/>,
     <NavigationItem data={{url:"/about",title:"About Us"}} key={"About Us"}/>,
-    <NavigationItem data={{url:"/contact",title:"Contact"}} key={"Contact"}/>,
     <NavigationItem data={{url:"/join",title:"Join"}} key={"Join"}/>,
     <NavigationItem data={{url:"/support",title:"Support"}} key={"Support"}/>,
 ]
