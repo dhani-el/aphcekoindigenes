@@ -5,6 +5,7 @@ import Contact from "./Contact/contact";
 import AboutUs from "./About/about";
 import Join from "./Join/join";
 import Support from "./Support/support";
+import News from "./News/news";
 
 const route = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ const route = createBrowserRouter([
   {
     path:"/support",
     element:<Support/>
+  },
+  {
+    path:"/news",
+    element:<News/>
   },
 
 ])
