@@ -4,6 +4,7 @@ import Home from "./Home/home";
 import Contact from "./Contact/contact";
 import AboutUs from "./About/about";
 import Join from "./Join/join";
+import Support from "./Support/support";
 
 const route = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ const route = createBrowserRouter([
   {
     path:"/join",
     element:<Join/>
+  },
+  {
+    path:"/support",
+    element:<Support/>
   },
 
 ])
