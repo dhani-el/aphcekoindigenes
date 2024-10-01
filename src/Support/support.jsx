@@ -1,11 +1,30 @@
 import { useState } from 'react';
 import { PaystackButton } from 'react-paystack';
 import  "./style.scss";
+import { NavBar,NavigationItem,Footer } from '../utils'; 
+
+
+
+const navItems = [
+  <NavigationItem data={{url:"/",title:"Home"}} key={"home"}/>,
+  <NavigationItem data={{url:"/about",title:"About Us"}} key={"About Us"}/>,
+  <NavigationItem data={{url:"/contact",title:"Contact"}} key={"Contact"}/>,
+  <NavigationItem data={{url:"/join",title:"Join"}} key={"Join"}/>,
+]
+
+
+const navigationData = [
+  {url:"/about",title:"About Us"},
+  {url:"/contact",title:"Contact"},
+  {url:"/support",title:"Support"},
+  {url:"/news",title:"News"},
+  {url:"/join",title:"Join"},
+]
 
 
 export default function Support(){
     const publicKey = "pk_your_public_key_here"
-    const [amount, setAmount] = useState(0) // Remember, set in kobo!
+    const [amount, setAmount] = useState() // Remember, set in kobo!
     const [email, setEmail] = useState("");
     const [phone, setPhone] = useState("");
 
@@ -25,9 +44,10 @@ export default function Support(){
             setter((init)=>value);
     }
 
-    return <div>
+    return <div id='support-page-container'>
+                <NavBar lists={navigationData} sideItems={navItems} />
                 <h3>Do You Want to Support the Association Financally? </h3>
-                <form>
+                <div id='form-div'>
                     <label>Enter Your Email:</label>
                     <input value={email} onChange={(e)=>handleInputValueChange(setEmail, e.target.value)} type="email" placeholder="johndoe@gmail.com"/>
                     <label>Your Phone Number:</label>
@@ -35,6 +55,7 @@ export default function Support(){
                     <label>Amount:</label>
                     <input value={amount} type='number' onChange={(e)=>handleInputValueChange(setAmount, e.target.value)} placeholder="5000"/>
                     <PaystackButton className="paystack-button" {...componentProps} />
-                </form>
+                </div>
+                <Footer data={navigationData}/>
     </div>
 }
