@@ -7,7 +7,6 @@ import dummyMember from "../assets/dummyMember.jpeg"
 
 
 const navItems = [
-    <NavigationItem data={{url:"/",title:"Home"}} key={"Home"}/>,
     <NavigationItem data={{url:"/about",title:"About Us"}} key={"About Us"}/>,
     <NavigationItem data={{url:"/contact",title:"Contact"}} key={"Contact"}/>,
     <NavigationItem data={{url:"/join",title:"Join"}} key={"Join"}/>,

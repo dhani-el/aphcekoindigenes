@@ -48,13 +48,7 @@ function ANavLink({navItem}){
     </li>
 }
 
-function SideNav(){
-    return <div id="side-nav">
-                <div>
-                    <HambergerMenu/>
-                </div>
-    </div>
-}
+
 
 function SideNavigation({items=[]}){
     const navBodyRef =  useRef(null);
@@ -76,9 +70,11 @@ function SideNavigation({items=[]}){
                     <div id="close-circle" onClick={closeSideBar}>
                         <CloseCircle/>
                     </div>
-                    {items.map(function(Item){
-                        return Item
-                    })}
+                    <div id="links-container">
+                        {items.map(function(Item){
+                            return Item
+                        })}
+                    </div>
                 </div>
     </div>
 }

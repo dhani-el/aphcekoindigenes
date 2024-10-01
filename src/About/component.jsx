@@ -36,12 +36,17 @@ function Image(){
 }
 
 export function CallToAction(){
+
+    function handleClick(){
+        window.location.href = "/join"
+    }
+    
     return <div id="ad-container">
                 <div id="background-image">
                 </div>
                 <div id="overlapping-text-container">
                     <h2>Are You An Eko Indigen Who Resonates With Us?</h2>
-                    <button>Join Us</button>
+                    <button onClick={handleClick}>Join Us</button>
                 </div>
     </div>
 }
