@@ -10,13 +10,14 @@ const navItems = [
   <NavigationItem data={{url:"/about",title:"About Us"}} key={"About Us"}/>,
   <NavigationItem data={{url:"/contact",title:"Contact"}} key={"Contact"}/>,
   <NavigationItem data={{url:"/join",title:"Join"}} key={"Join"}/>,
+  <NavigationItem data={{url:"/news",title:"News"}} key={"News"}/>,
 ]
 
 
 const navigationData = [
+  {url:"/",title:"Home"},
   {url:"/about",title:"About Us"},
   {url:"/contact",title:"Contact"},
-  {url:"/support",title:"Support"},
   {url:"/news",title:"News"},
   {url:"/join",title:"Join"},
 ]
