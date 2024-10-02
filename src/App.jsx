@@ -5,6 +5,7 @@ import AboutUs from "./About/about";
 import Join from "./Join/join";
 import Support from "./Support/support";
 import News from "./News/news";
+import SingleNewsPage from "./SingleNews/singleNews";
 
 
 const route = createBrowserRouter([
@@ -31,6 +32,10 @@ const route = createBrowserRouter([
   {
     path:"/news",
     element:<News/>
+  },
+  {
+    path:"/news-update",
+    element:<SingleNewsPage/>
   },
 
 ])
