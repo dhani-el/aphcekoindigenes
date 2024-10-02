@@ -1,5 +1,7 @@
 
-import { Location,Sms,Call,Facebook,Youtube,Instagram } from "iconsax-react"
+import { Location,Sms,Call,Facebook,Youtube,Instagram } from "iconsax-react";
+
+const associationEmail = ""
 
 export function GetInTouch(){
     return <div id="get-in-touch-container">
@@ -38,12 +40,12 @@ function FollowUs(){
 export function SendMesssageForm(){
     return <div id="send-messsage-form">
                 <h3>Send us a Message</h3>
-                <form>
-                    <input placeholder="Name" type="name" />
-                    <input placeholder="E-Mail Address " type="name" />
-                    <input placeholder="Message" type="text" />
+                <form action={`mailto:${associationEmail}`} method="post" enctype="text/plain">
+                    <input required placeholder="Name" type="text" />
+                    <input required placeholder="E-Mail Address " type="email" />
+                    <input required placeholder="Message" type="text" />
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A corrupti minus, expedita nisi laborum eligendi?</p>
-                    <button >Submit</button>
+                    <button type="submit" >Submit</button>
                 </form>
     </div>
 }

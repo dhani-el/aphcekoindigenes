@@ -161,7 +161,7 @@
         #list-of-news{
             width: 100%;
            padding: 1rem;
-            height: 55vh;
+            height: 35vh;
             border-radius: 1rem;
             swiper-slide.swiper-slide-active{
                 border-radius: 1rem;
@@ -173,18 +173,32 @@
                     display: flex;
                     justify-content: center;
                     border-radius: 1rem;
-
-                    img{
+                    #image-div{
+                        width: 40%;
                         height: 100%;
-                        border-radius: 1rem;
                     }
-                    p{
-                        position: absolute;
-                        bottom: 50px;
-                        left: 50px;
-                        background-color: rgba(245, 245, 245, 0.592);
-                        padding: 1rem;
-                        border-radius: 0.5rem;
+                    #text-div{
+                        width: 60%;
+                        background-color: whitesmoke;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        text-align: center;
+                        gap: 1rem;
+                        h2{
+                            margin: 0rem;
+                            font-size: 1.2rem;
+                        }
+                        #description{
+                            font-size: 0.6rem;
+                            font-weight: 500;
+                        }
+                        #author-date{
+                            font-size: 0.4rem;
+                            color: grey;
+                        }
                     }
 
                 }
@@ -391,7 +405,7 @@
                 margin-bottom: 2rem;
             }
             #list-of-news{
-                width: 70%;
+                width: 120vh;
                 height: 55vh;
                 border-radius: 1rem;
                 swiper-slide.swiper-slide-active{
@@ -403,21 +417,33 @@
                         display: flex;
                         justify-content: center;
                         border-radius: 1rem;
-    
-                        img{
-                            width: 100%;
-                            height: inherit;
-                            border-radius: 1rem;
+                        #image-div{
+                            width: 50%;
+                            height: 100%;
                         }
-                        p{
-                            position: absolute;
-                            bottom: 50px;
-                            left: 50px;
-                            background-color: rgba(245, 245, 245, 0.592);
-                            padding: 1rem;
-                            border-radius: 0.5rem;
+                        #text-div{
+                            width: 50%;
+                            background-color: whitesmoke;
+                            height: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            text-align: center;
+                            gap: 1rem;
+                            padding: 0rem 1rem;
+                            h2{
+                                font-size: 1.8rem;
+                            }
+                            #description{
+                                font-size: 0.8rem;
+                                font-weight: 500;
+                            }
+                            #author-date{
+                                font-size: 0.6rem;
+                                color: grey;
+                            }
                         }
-    
                     }
                 }
             }

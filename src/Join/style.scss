@@ -1,0 +1,95 @@
+
+
+#join-page-container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
+    #join-form{
+        min-height: 90vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 3rem;
+        p{
+            margin-bottom: 2rem ;
+            font-size: 0.6rem;
+        }
+        form{
+            position: relative;
+            top: 10vh;
+            display: flex;
+            flex-direction: column;
+            width: 85%;
+            gap: 0.5rem;
+            margin-bottom: 4rem;
+            label{
+                font-size: 0.6rem;
+            }
+            #submit-button{
+                background-color: red;
+                border: none ;
+                color: white ;
+                font-weight: 600;
+            }
+        }
+        form > input {
+            padding: 0.5rem;
+        }
+        #radio-container{
+            display: flex ;
+            gap: 1rem;
+            .radio-component{
+                display: flex;
+                gap: 0.2rem;
+            }
+        }
+    }
+}
+
+@media (orientation:"landscape") {
+    #join-page-container{
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100vw;
+        #join-form{
+            min-height: 90vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            p{
+                margin-bottom: 2rem ;
+                font-size: 0.6rem;
+            }
+            form{
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+                gap: 1rem;
+                margin-bottom: 4rem;
+                #submit-button{
+                    background-color: red;
+                    border: none ;
+                    color: white ;
+                    font-weight: 600;
+                }
+            }
+            form > input {
+                padding: 0.5rem;
+            }
+            #radio-container{
+                display: flex ;
+                gap: 1rem;
+                .radio-component{
+                    display: flex;
+                    gap: 0.2rem;
+                }
+            }
+        }
+    }
+}
