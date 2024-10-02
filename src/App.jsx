@@ -1,11 +1,11 @@
 import { createBrowserRouter,RouterProvider } from "react-router-dom"
-
 import Home from "./Home/home";
 import Contact from "./Contact/contact";
 import AboutUs from "./About/about";
 import Join from "./Join/join";
 import Support from "./Support/support";
 import News from "./News/news";
+
 
 const route = createBrowserRouter([
   {

@@ -114,8 +114,13 @@ export function News({news}){
 
 function NewsItem({data}){
     return <div id="single-news-item">
-                <img src={data.img}/>
-                <p>{data.title}</p>
+                <div id = "image-div" style={{backgroundImage:`url(/${data.image})`, backgroundRepeat:"no-repeat",backgroundSize:"cover"}}>
+                </div>
+                <div id="text-div">
+                    <h2>{data.title}</h2>
+                    <p id="description">{data.description}</p>
+                    <p id="author-date">by {data.author} &#x2022; {data.date} </p>
+                </div>
     </div>
 }
 

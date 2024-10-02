@@ -3,13 +3,14 @@ import "./style.scss"
 import { NavBar,NavigationItem,Footer} from "../utils"
 import { PageCurtain, FloatingText, CenterPiece, Mission,News, } from "./components";
 import dummyMember from "../assets/dummyMember.jpeg"
-
+import AllNews from "../news"
 
 
 const navItems = [
     <NavigationItem data={{url:"/about",title:"About Us"}} key={"About Us"}/>,
     <NavigationItem data={{url:"/contact",title:"Contact"}} key={"Contact"}/>,
     <NavigationItem data={{url:"/join",title:"Join"}} key={"Join"}/>,
+    <NavigationItem data={{url:"/news",title:"News"}} key={"News"}/>,
     <NavigationItem data={{url:"/support",title:"Support"}} key={"Support"}/>,
 ]
 
@@ -22,18 +23,7 @@ const navigationData = [
     {url:"/join",title:"Join"},
 ]
 
-const news = [
-    {
-        img:dummyMember,
-        title:"December 2024 Get together",
-        url:"/news"
-    },
-    {
-        img:dummyMember,
-        title:"December 2024 Get together",
-        url:"/newws"
-    },
-]
+
 
 export default function Home(){
 
@@ -43,7 +33,7 @@ export default function Home(){
                 <FloatingText/>
                 <CenterPiece/>
                 <Mission/>
-                <News news={news} />
+                <News news={AllNews} />
                 <Footer data={navigationData}/>
     </div>
 }
