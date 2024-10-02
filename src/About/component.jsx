@@ -55,12 +55,20 @@ export function Founders({images=[]}){
     return <div id="founders-container">
                 <h2>Founders</h2>
                 <p>Meet Some of the Founding Members</p>
-                <div>
+                <div id="list-of-members">
                     {
                         images.map(function(image){
-                                    return <img src={image} />
+                                    return <Amember image ={image} />
                         })
                     }
+                </div>
+    </div>
+}
+
+function Amember({image}){
+    return <div className="a-member">
+                <div id="a-member-image-container">
+                    <img src={image} />
                 </div>
     </div>
 }

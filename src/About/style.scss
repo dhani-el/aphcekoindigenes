@@ -162,6 +162,25 @@
                 margin-top: 0.5rem;
                 font-size: 0.8rem;
             }
+            #list-of-members{
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                padding: 1.5rem;
+                justify-content: space-around;
+                .a-member{
+                    width: 15%;
+                    #a-member-image-container{
+                        width: 100%;
+                        -webkit-mask-image: url(w3logo.png);
+                        mask-image: url(../assets/mask.svg);
+                        mask-repeat: no-repeat;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
         }
     }
 }
