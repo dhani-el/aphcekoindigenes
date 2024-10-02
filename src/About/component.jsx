@@ -51,24 +51,28 @@ export function CallToAction(){
     </div>
 }
 
-export function Founders({images=[]}){
+export function Founders({infos=[]}){
     return <div id="founders-container">
                 <h2>Founders</h2>
                 <p>Meet Some of the Founding Members</p>
                 <div id="list-of-members">
                     {
-                        images.map(function(image){
-                                    return <Amember image ={image} />
+                        infos.map(function(info){
+                                    return <Amember image ={info.image} name={info.name} role={info.role} />
                         })
                     }
                 </div>
     </div>
 }
 
-function Amember({image}){
+function Amember({image,name,role}){
     return <div className="a-member">
                 <div id="a-member-image-container">
                     <img src={image} />
+                </div>
+                <div id="text-container">
+                    <h4>{name}</h4>
+                    <p>{role}</p>
                 </div>
     </div>
 }

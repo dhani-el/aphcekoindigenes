@@ -32,17 +32,17 @@ const navigationData = [
 ]
 
 const imagesOfMeembers = [
-    One,
-    Two,
-    Three,
-    Four,
-    Five,
-    Six,
-    Seven,
-    Eight,
-    Nine,
-    Ten,
-    Eleven,
+    {role:"Grand Patron of the Association.",name:"PA YOMADE BRAIMO-IGBO",image:One},
+    {role:"Chairman and member of Board of Trustees.",name:"ELDER BABAJIDE O. LAYENI.",image:Two},
+    {role:"Member of Board of Trustees",name:"ALH. ABDUL LATEEF O.BAKARE",image:Three},
+    {role:"Gen. Secretary and member of Board of Trustees.",name:"ALH. TAOFEEK A. ANIMASHAUN",image:Four},
+    {role:"Member of Board of Trustees.",name:"ALH. CHIEF MAROOF-DEEN BABATUNDE OSHODI.",image:Five},
+    {role:"Member of Board of Trustees.",name:"ALH. CHIEF ABIBU OLADOTUN OKI.",image:Six},
+    {role:"Baba Egbe.",name:"ALH. NOJIMDEEN A. GIWA.  ",image:Seven},
+    {role:"Treasurer.",name:"ALH. ASHIMIYU O. APATA.",image:Eight},
+    {role:"Financial Secretary.",name:"PRINCE KASSIM NURUDEEN.",image:Nine},
+    {role:"Publicity Secretary.",name:"PRINCE ADEYEMI A. KOSOKO.",image:Ten},
+    {role:"Social secretary.",name:"PRINCE HABEEB O. SHONIBARE.",image:Eleven},
     ]
 
 export default function AboutUs(){
@@ -52,7 +52,7 @@ export default function AboutUs(){
                     <Intro/>
                     <Point/>
                     <Works/>
-                    <Founders images={imagesOfMeembers}/>
+                    <Founders infos={imagesOfMeembers}/>
                     <CallToAction/>
                     <Footer data={navigationData} />
                 </div>
