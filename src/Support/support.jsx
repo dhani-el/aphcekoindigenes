@@ -24,7 +24,7 @@ const navigationData = [
 
 
 export default function Support(){
-    const publicKey = "pk_your_public_key_here"
+    const publicKey = "pk_test_85ae9f3c0f90ea71f1b605a390aa0fa60a769f42"
     const [amount, setAmount] = useState() // Remember, set in kobo!
     const [email, setEmail] = useState("");
     const [phone, setPhone] = useState("");
