@@ -333,7 +333,12 @@
             .center-piece-item#Church{
                 background-image: url("../assets//churchbg.png");
                 background-size: contain;
-                overflow: hidden;
+                img{
+                    width: 102%;
+                    position: absolute;
+                    bottom: -0px;
+                    left: -0px;
+                }
             }
         }
         #mission-container{
