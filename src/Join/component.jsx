@@ -9,13 +9,13 @@ export function JoinForm(){
                 <p>We would love to have You Join Us</p>
                 <form action={`mailto:${associationEmail}`} method="post" enctype="text/plain" >
                     <label>Full Name:</label>
-                    <input required placeholder="Enter Your Full Name" type="text" />
+                    <input  name = "name" required placeholder="Enter Your Full Name" type="text" />
                     <label>Email Address:</label>
-                    <input required placeholder="Enter Your Email Address " type="email" />
+                    <input name ="email" required placeholder="Enter Your Email Address " type="email" />
                     <label>Phone Number:</label>
-                    <input required placeholder="Enter Your Phone Number" type="number"  />
+                    <input  name= "number" required placeholder="Enter Your Phone Number" type="number"  />
                     <label>Local Government of Birth:</label>
-                    <input required placeholder="Where in Lagos are You From?" type="text" />
+                    <input name ="location" required placeholder="Where in Lagos are You From?" type="text" />
                     <label>Gender:</label>
                     <div id="radio-container">
                         <div className="radio-component">
