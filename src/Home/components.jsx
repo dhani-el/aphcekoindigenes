@@ -2,9 +2,8 @@
 import danfo from "../assets/danfoOnly.png"
 import eyo from "../assets/eyoOnly.png"
 import drum from "../assets/drumOnly.png"
-import church from "../assets/churchOnly.png"
+import church from "../assets/mosque2.png"
 import dummyMember from "../assets/dummyMember.jpeg"
-import { NavLinks } from "../utils"
 import { register } from 'swiper/element/bundle';
 import { useRef } from "react"
 

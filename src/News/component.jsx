@@ -13,7 +13,7 @@ export function NewsList({list=[]}){
     return <div id="news-list-container">
                 {
                     list.map(function(aNews){
-                        return <Link><ANewsArticle image={aNews.image} title={aNews.title} description={aNews.description} author={aNews.author} date={aNews.date} /></Link>
+                        return <Link to={`/news-update?title=${aNews.title}&author=${aNews.author}`} ><ANewsArticle image={aNews.image} title={aNews.title} description={aNews.description} author={aNews.author} date={aNews.date} /></Link>
                     })
                 }
     </div>

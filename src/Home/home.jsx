@@ -2,7 +2,6 @@
 import "./style.scss"
 import { NavBar,NavigationItem,Footer} from "../utils"
 import { PageCurtain, FloatingText, CenterPiece, Mission,News, } from "./components";
-import dummyMember from "../assets/dummyMember.jpeg"
 import AllNews from "../news"
 
 
