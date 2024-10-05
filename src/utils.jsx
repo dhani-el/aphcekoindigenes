@@ -1,5 +1,4 @@
 import { HambergerMenu,CloseCircle } from "iconsax-react";
-// import { NavigationItem } from "./Home/components";
 import logo from "./assets/logo.png";
 import "./index.scss";
 import { useRef } from 'react';
@@ -7,6 +6,7 @@ import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { Link } from "react-router-dom";
 gsap.registerPlugin(useGSAP);
+import { Helmet } from "react-helmet-async";
 
 
 
@@ -48,8 +48,6 @@ function ANavLink({navItem}){
     </li>
 }
 
-
-
 function SideNavigation({items=[]}){
     const navBodyRef =  useRef(null);
     function openSideBar(){
@@ -85,10 +83,29 @@ export function NavigationItem({data}){
     </div>
 }
 
-
 export function Footer({data}){
     return <footer id="footer">
                 <NavLinks lists={data} />
                 <p id="copyright">&#169; Copyrights 2024  </p>
     </footer>
 }
+
+export function SEO({title, description, name, type}) {
+    return <Helmet>
+                { /* Standard metadata tags */ }
+                <title>{title}</title>
+                <meta name='description' content={description} />
+                { /* End standard metadata tags */ }
+                { /* Facebook tags */ }
+                <meta property="og:type" content={type} />
+                <meta property="og:title" content={title} />
+                <meta property="og:description" content={description} />
+                { /* End Facebook tags */ }
+                { /* Twitter tags */ }
+                <meta name="twitter:creator" content={name} />
+                <meta name="twitter:card" content={type} />
+                <meta name="twitter:title" content={title} />
+                <meta name="twitter:description" content={description} />
+                { /* End Twitter tags */ }
+            </Helmet>
+    }
