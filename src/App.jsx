@@ -1,3 +1,4 @@
+import {HelmetProvider } from 'react-helmet-async';
 import { createBrowserRouter,RouterProvider } from "react-router-dom"
 import Home from "./Home/home";
 import Contact from "./Contact/contact";
@@ -6,7 +7,6 @@ import Join from "./Join/join";
 import Support from "./Support/support";
 import News from "./News/news";
 import SingleNewsPage from "./SingleNews/singleNews";
-
 
 const route = createBrowserRouter([
   {
@@ -43,7 +43,9 @@ const route = createBrowserRouter([
 
 function App() {
 
-  return <RouterProvider router={route}/>
+  return <HelmetProvider>
+              <RouterProvider router={route}/>
+          </HelmetProvider>
 }
 
 export default App

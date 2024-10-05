@@ -4,6 +4,7 @@ import { SendMesssageForm, GetInTouch } from "./component";
 import "./contact-style.scss";
 
 const navigationData = [
+    {url:"/",title:"Home"},
     {url:"/about",title:"About Us"},
     {url:"/support",title:"Support"},
     {url:"/news",title:"News"},
@@ -15,6 +16,7 @@ const navItems = [
     <NavigationItem data={{url:"/about",title:"About Us"}} key={"About Us"}/>,
     <NavigationItem data={{url:"/join",title:"Join"}} key={"Join"}/>,
     <NavigationItem data={{url:"/support",title:"Support"}} key={"Support"}/>,
+    <NavigationItem data={{url:"/news",title:"News"}} key={"News"}/>,
 ]
 
 export default function Contact(){
