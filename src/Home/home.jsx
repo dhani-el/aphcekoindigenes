@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import "./style.scss"
-import { NavBar,NavigationItem,Footer} from "../utils"
+import { NavBar,NavigationItem,Footer, SEO} from "../utils"
 import { PageCurtain, FloatingText, CenterPiece, Mission,News, } from "./components";
 import AllNews from "../news"
 
@@ -27,10 +27,12 @@ const navigationData = [
 export default function Home(){
 
     return <div id="home-container">
-                <Helmet>
-                <title>ASSOCIATION FOR THE PROMOTION OF HERITAGE AND CULTURE OF EKO INDIGENES.</title>
+                <SEO title={"Promotion of Heritage and Culture of Eko Indigenes."} 
+                description={"Home page of the association for the promotion of heritage and culture of eko indigenes."} />
+                {/* <Helmet>
+                <title>Promotion of Heritage and Culture of Eko Indigenes.</title>
                 <meta name='description' content='Home page of the association for the promotion of heritage and culture of eko indigenes' />
-                </Helmet>
+                </Helmet> */}
                 <PageCurtain/>
                 <NavBar lists={navigationData} sideItems={navItems} />
                 <FloatingText/>
