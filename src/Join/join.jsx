@@ -1,6 +1,6 @@
 
 import { JoinForm } from "./component";
-import {Footer,NavBar,NavigationItem} from "../utils";
+import {Footer,NavBar,NavigationItem,SEO} from "../utils";
 import "./style.scss"
 
 const navItems = [
@@ -22,6 +22,7 @@ const navigationData = [
 
 export default function Join(){
     return <div  id="join-page-container">
+                <SEO description={"If you are interested in what we do you are wekcome to join us "} title={"Join us"} />
                 <NavBar lists={navigationData} sideItems={navItems} />
                 <JoinForm />
                 <Footer data={navigationData}/>

@@ -1,4 +1,4 @@
-import {NavBar,NavigationItem, Footer} from "../utils";
+import {NavBar,NavigationItem, Footer, SEO} from "../utils";
 import { NoNews,NewsList } from "./component";
 import "./style.scss";
 import AllNews from "../news";
@@ -24,6 +24,7 @@ const navigationData = [
 
 export default function News(){
     return <div id="news-page-container">
+                <SEO description={"Get updates on the activities and events going on and being carried out by the association"} title={"News"} />
                 <NavBar lists={navigationData} sideItems={navItems} />
                 <h2>News and Upcoming Events </h2>
                 {(AllNews.length <= 0 )?<NoNews/> : <NewsList list={AllNews} />}
