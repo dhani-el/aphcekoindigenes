@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { PaystackButton } from 'react-paystack';
 import  "./style.scss";
-import { NavBar,NavigationItem,Footer } from '../utils'; 
+import { NavBar,NavigationItem,Footer, SEO} from '../utils'; 
 
 
 
@@ -46,6 +46,7 @@ export default function Support(){
     }
 
     return <div id='support-page-container'>
+                <SEO description={"Do you want to show support or appreciation for the assocaitions cause? well you can make monetary donations to support the associations cause "} title={"Support Us"} />
                 <NavBar lists={navigationData} sideItems={navItems} />
                 <h3>Do You Want to Support the Association Financally? </h3>
                 <div id='form-div'>

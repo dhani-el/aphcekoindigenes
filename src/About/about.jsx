@@ -1,6 +1,6 @@
 
 
-import { NavBar,NavigationItem, Footer } from "../utils";
+import { NavBar,NavigationItem, Footer, SEO } from "../utils";
 import { Intro,Point,CallToAction,Founders,Works } from "./component";
 import "./style.scss";
 import One from "../assets/members/1.jpeg"
@@ -47,6 +47,7 @@ const imagesOfMeembers = [
 
 export default function AboutUs(){
     return <div id="about-page-container">
+                <SEO description={"Learn more about the association for the promotion of heritage and culture of eko indigenes"} title={"About page of the association"} />
                 <NavBar sideItems={navItems} lists={navigationData} />
                 <div id="about-body-container">
                     <Intro/>

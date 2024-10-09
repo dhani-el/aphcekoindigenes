@@ -1,5 +1,5 @@
 
-import { NavBar,NavigationItem,Footer } from "../utils";
+import { NavBar,NavigationItem,Footer,SEO} from "../utils";
 import { SendMesssageForm, GetInTouch } from "./component";
 import "./contact-style.scss";
 
@@ -21,6 +21,7 @@ const navItems = [
 
 export default function Contact(){
     return <div id="contact-page">
+                <SEO description={"you can contact a member of the association to make enquiries or learn more about what we do "} title={"Contact us"} />
                 <NavBar lists={navigationData} sideItems={navItems} />
                 <div id="contact-page-body">
                     <div id="contact-us-container">
