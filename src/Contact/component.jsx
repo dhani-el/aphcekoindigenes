@@ -9,7 +9,7 @@ export function GetInTouch(){
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ad recusandae reiciendis voluptas nulla eaque?</p>
                 <ContactItem Icon={Location} type={"Address"} value={"45/47 martins street Lagos-Island Lagos"}/>
                 <ContactItem Icon={Call} type={"Phone Number"} value={`08052013552 | 0818825832 | 08037234488 `}/>
-                <ContactItem Icon={Sms} type={"E-Mail"} value={"assoproheritage@gmail.com"}/>
+                <ContactItem Icon={Sms} type={"E-Mail"} value={"assoproheritagecultureeko@gmail.com"}/>
                 <FollowUs/>
     </div>
 }
