@@ -104,50 +104,23 @@
             width: 100%;
             padding: 1rem;
             align-self: flex-end;
-            // display: flex;
-            #image-container{
-                width: 40%;
-                img{
-                    width: 100%;
-                    border-radius: 0.5rem;
-                }
-            }
-            #text-container{
-                position: relative;
-                top: -50px;
-                left: 30%;
-                width: 75%;
-                border-radius: 0.5rem;
-                background-color: rgba(245, 245, 245, 0.607);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            p{
+                text-align: center;
+                width: 95%;
                 padding: 1rem;
+                border: 0.02rem solid rgba(255, 255, 255, 0) ;
+                border-radius: 0.5rem;
+                background-color: rgba(255, 227, 227, 0.653);
+                font-weight:500;
 
             }
         }
-        #a-mission-container2{
-            width: 100%;
-            padding: 1rem;
-            align-self: flex-end;
-            padding-top: 0px;
-            // display: flex;
-            #image-container2{
-                width: 40%;
-                position: relative;
-                left: 65%;
-                img{
-                    width: 100%;
-                    border-radius: 0.5rem;
-                }
-            }
-            #text-container2{
-                position: relative;
-                top: -50px;
-                width: 75%;
-                border-radius: 0.5rem;
-                background-color: rgba(245, 245, 245, 0.607);
-                padding: 1rem;
 
-            }
-        }
     }
     #news-container{
         display: flex;
@@ -352,9 +325,19 @@
                 text-align: center;
             }
             #a-mission-container{
-                width: 80%;
-                padding: 3rem;
-                align-self: flex-end;
+                width: 90%;
+                padding: 1rem;
+                align-self: center;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                gap: 0.5rem;
+                flex-wrap: wrap;
+                p{
+                    width: 30%;
+                    padding: 1rem;
+                }
                 // display: flex;
                 #image-container{
                     width: 30%;

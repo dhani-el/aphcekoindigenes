@@ -60,19 +60,17 @@ export function Mission(){
     return <div id="mission-container">
                 <h2>Our Mission</h2>
                 <Amission/>
-                <Amission2/>
     </div>
 }
 function Amission(){
     return <div id="a-mission-container">
-                <div id="image-container">
-                    <img src={dummyMember} />
-                </div>
-                <div id="text-container">
-                    <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias ut tempora harum ipsam, cum aperiam eum quibusdam maiores doloremque porro impedit quae consequuntur, facilis qui. Asperiores explicabo voluptatum ducimus ipsam dolores commodi fugiat, qui ipsa in ad accusamus aut laudantium veniam. Aliquam nam dolorum reiciendis velit dolor facilis voluptate, sunt modi asperiores ab sapiente ratione, hic quo nostrum? Ducimus, ea sapiente possimus nobis, accusamus maiores nisi saepe ex molestias assumenda fugit totam repudiandae non iure velit reprehenderit sit libero aut similique nam dolorum? Ipsam beatae dolore sunt ratione. Mollitia adipisci sit labore inventore, facilis, minus cumque, vero quasi ratione repellat aperiam illo?
-                    </p>
-                </div>
+                        <p>To promote the heritage and culture of eko indigenes.</p>
+                        <p>To promote peace and unity among eko indigenes from the 5 divisions (ibile) of lagos state.</p>
+                        <p>To work towards bringing back the integrity of our state as we used to have it in the days of our forefathers.</p>
+                        <p>To encourage our young ones to develop keen interest in education, skill acquisition and good morals, by holding symposiums and pubpc lectures.</p>
+                        <p>To discourage our youth from political thuggery during electioneering process.</p>
+                        <p>To foster good relationship with the government, hrh's,indigenes and households.</p>
+                        <p>To always remember and honour our past heroes and heroines.</p>
     </div>
 }
 function Amission2(){
