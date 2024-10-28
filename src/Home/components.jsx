@@ -67,7 +67,7 @@ function Amission(){
                         <p>To promote the heritage and culture of eko indigenes.</p>
                         <p>To promote peace and unity among eko indigenes from the 5 divisions (ibile) of lagos state.</p>
                         <p>To work towards bringing back the integrity of our state as we used to have it in the days of our forefathers.</p>
-                        <p>To encourage our young ones to develop keen interest in education, skill acquisition and good morals, by holding symposiums and pubpc lectures.</p>
+                        <p>To encourage our young ones to develop keen interest in education, skill acquisition and good morals, by holding symposiums and public lectures.</p>
                         <p>To discourage our youth from political thuggery during electioneering process.</p>
                         <p>To foster good relationship with the government, hrh's,indigenes and households.</p>
                         <p>To always remember and honour our past heroes and heroines.</p>
