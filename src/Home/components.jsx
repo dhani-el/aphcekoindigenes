@@ -69,7 +69,7 @@ function Amission(){
                         <p>To work towards bringing back the integrity of our state as we used to have it in the days of our forefathers.</p>
                         <p>To encourage our young ones to develop keen interest in education, skill acquisition and good morals, by holding symposiums and public lectures.</p>
                         <p>To discourage our youth from political thuggery during electioneering process.</p>
-                        <p>To foster good relationship with the government, hrh's,indigenes and households.</p>
+                        <p>To foster good relationship with the government, HRH's,indigenes and households.</p>
                         <p>To always remember and honour our past heroes and heroines.</p>
     </div>
 }
