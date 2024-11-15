@@ -1,5 +1,6 @@
 
-import danfo from "../assets/danfoOnly.png"
+import danfo from "../assets/church 2.png"
+import palace from "../assets/palace.png"
 import eyo from "../assets/eyoOnly.png"
 import drum from "../assets/drumOnly.png"
 import church from "../assets/mosque2.png"
@@ -29,6 +30,7 @@ export function CenterPiece(){
     return <div id="center-piece">
                  <Danfo/> 
                 <Drum/>
+                <Palace/>
                  <Eyo/>
                 <Church/> 
     </div>
@@ -51,6 +53,12 @@ function Eyo(){
 function Church(){
     return <div className="center-piece-item" id="Church" >
                 <img src={church} alt="Danfo a public commonly bus found in lagos"/>
+    </div>
+}
+
+function Palace(){
+    return <div className="center-piece-item" id="Church" >
+                <img src={palace} alt="Danfo a public commonly bus found in lagos"/>
     </div>
 }
 
