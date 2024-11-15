@@ -62,10 +62,11 @@
             background-image: url("../assets//danfobg.png");
             background-size: contain;
             position: relative;
+            overflow: hidden;
             img{
-                width: 130%;
+                width: 90%;
                 position: absolute;
-                bottom: -20px;
+                bottom: -5px;
                 left: 5px;
             }
         }
@@ -286,11 +287,12 @@
                 background-image: url("../assets//danfobg.png");
                 background-size: contain;
                 position: relative;
+                overflow: hidden;
                 img{
-                    width: 110%;
+                    width: 90%;
                     position: absolute;
-                    bottom: -20px;
-                    left: -20px;
+                    bottom: -10px;
+                    left: 20px;
                 }
             }
             .center-piece-item#Eyo{
