@@ -1,6 +1,13 @@
 
 
 export default [{
+    image:'party.jpg',
+    title:'meeting of the trustees',
+    description:'',
+    author:'',
+    date:'',
+    body:'',
+},{
     image:"Lagosbridge.jpeg",
     title:"Meet and greet",
     description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae pariatur dolore possimus! Ex, dicta? Pariatur, quibusdam est! Excepturi, veniam deserunt.",
