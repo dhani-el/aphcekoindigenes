@@ -1,10 +1,10 @@
 
 
 export default [{
-    image:"Lagosbridge.jpeg",
-    title:"Meet and greet",
+    image:"random.jpeg",
+    title:"1st meeting of the year",
     description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae pariatur dolore possimus! Ex, dicta? Pariatur, quibusdam est! Excepturi, veniam deserunt.",
-    author:"Daniel Ukuhor",
+    author:"Mr Taofeek",
     date:"3 months ago",
     body:`Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt, magnam quia.
      Eveniet veniam sequi corporis dolorem, dolores aliquam iusto odio nam ea commodi assumenda esse 
@@ -17,7 +17,7 @@ export default [{
     Commodi nesciunt, ab, deserunt vitae nostrum molestiae ipsam temporibus ex itaque doloribus exercitationem 
     excepturi harum tenetur necessitatibus molestias labore nisi vel. Temporibus corporis accusamus ut quaerat
     tempore quidem, cupiditate quas, libero ipsum, cum sed pariatur voluptate enim dolorum eum?`
-}{
+},{
     image:"Lagosbridge.jpeg",
     title:"Meet and greet",
     description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae pariatur dolore possimus! Ex, dicta? Pariatur, quibusdam est! Excepturi, veniam deserunt.",
