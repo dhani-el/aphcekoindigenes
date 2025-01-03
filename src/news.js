@@ -1,6 +1,13 @@
 
 
 export default [{
+    image:"random.png",
+    title:"1st meeting of the year",
+    description:"success ",
+    author:"daniel",
+    date:"11:15:2024",
+    body:"total content of the news"
+},{
     image:"iga-idungaran.png",
     title:"random title",
     description:"random desc",
