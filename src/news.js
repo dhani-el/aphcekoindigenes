@@ -1,6 +1,13 @@
 
 
 export default [{
+    image:"iga-idungaran.png",
+    title:"random title",
+    description:"random desc",
+    author:"daniel",
+    date:"11:15:2024",
+    body:"total content of the news"
+},{
     image:"Lagosbridge.jpeg",
     title:"Meet and greet",
     description:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae pariatur dolore possimus! Ex, dicta? Pariatur, quibusdam est! Excepturi, veniam deserunt.",
