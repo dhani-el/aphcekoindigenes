@@ -21,6 +21,11 @@ export function HeMage({image}){
 
 export function Text({text}){
     return <div id="body-text-container">
-                <div>{text}</div>
+        {
+            text.map(function(Paragraph){
+                return <p>{Paragraph}</p>
+            }
+                )
+        }
     </div>
 }
