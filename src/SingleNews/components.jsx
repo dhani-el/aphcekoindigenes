@@ -19,13 +19,12 @@ export function HeMage({image}){
     </div>
 }
 
-export function Text({text}){
+export function Text({text=[]}){
+
+    console.log(text)
     return <div id="body-text-container">
-        {
-            text.map(function(Paragraph){
-                return <p>{Paragraph}</p>
-            }
-                )
-        }
+        {text.map(function(aText){
+                return <p>{aText}</p>
+        })
     </div>
 }
