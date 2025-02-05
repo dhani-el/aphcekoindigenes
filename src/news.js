@@ -152,7 +152,7 @@ Copyright©2006`
     author:"PRINCE OLUSI ADEPEJU",
     date:"2nd February 2025",
     body:("ASHIPA (1600-1630)"
-"Ashipa was regarded as the founder of dynasty of Lagos. He was the son Oba of Benin. He was 
+"Ashipa was regarded as the founder of dynasty of Lagos. He was the son Oba of Benin. He was "
 "acting as the leader of the people of Lagos but not as the king. He serves as the intermediary "
 "between the Oba of Benin and the people of Lagos (eko),he spent 27 years as the leader of eko ,and "
 "died in 1630 and his son Ado took over his responsibility."
