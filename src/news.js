@@ -145,21 +145,4 @@ march, 2002.\n
 He later settled down as a legal practitioner till he was appointed by the gods of the land of Lagos to 
 rule the people of EKO ILE.(Lagos) in 2003\n
 Copyright©2006`
-},{
-    image:"Lagosbridge.jpeg",
-    title:"History of the past and present Oba of Lagos.",
-    description:"Lagos dynasty since 1600.",
-    author:"PRINCE OLUSI ADEPEJU",
-    date:"2nd February 2025",
-    body:("ASHIPA (1600-1630)"
-"Ashipa was regarded as the founder of dynasty of Lagos. He was the son Oba of Benin. He was "
-"acting as the leader of the people of Lagos but not as the king. He serves as the intermediary "
-"between the Oba of Benin and the people of Lagos (eko),he spent 27 years as the leader of eko ,and "
-"died in 1630 and his son Ado took over his responsibility."
-"OBA ADO (1630-1669)"
-"Oba ado, the son of ashipa took over the leadership role played by his father in 1630 during his own "
-"reign, he was elevated to an Oba and was crown as the king of Lagos by the Oba of Benin. Oba ado "
-"became the first Oba of Lagos. Oba ado had three children,2 males and 1 female. They include "
-"(Gabaro, Akinsemoyin, and Erelu Kuti).Oba ado ruled for 39years. He joined his ancestor in 1669 and "
-"his first son Gabaro succeeded him.")
 }]
