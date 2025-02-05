@@ -25,6 +25,6 @@ export function Text({text=[]}){
     return <div id="body-text-container">
         {text.map(function(aText){
                 return <p>{aText}</p>
-        })
+        })}
     </div>
 }
