@@ -1,6 +1,41 @@
 
 
-export default [{
+export default [
+    {
+    image:"oba_adeyinka.jpeg",
+    title:"REMEMBRANCE OF OBA ADEYINKA OYEKAN.",
+    description:"[June 30, 1911- March 7, 2003].",
+    author:"Hon. Prince TAIWO AJIBADE OYEKAN (Grandson/Chairmanship Aspirant, Lagos I)",
+    date:"11th March 2025",
+    body:[
+        `Today And Always, I Remember The Passing Of My Grandfather And His
+Imperial Majesty Oba Adeyinka Oyekan || Who Reigned As The Oba Of Lagos Between 1965 To 2003`,
+
+`It's 22 Years Oba Oyekan Joined His Ancestors`,
+
+`Kabiyesi Was A Custodian Of Tradition And Culture; A Promoter Of Lagos Cultural Heritage `,
+
+`During His Reign, He Was A Foremost Monarch`,
+
+`An Epitome Of Wisdom, Justice, Fairness, Courage, Compassion And Integrity`,
+
+`Papa, As He Was Fondly Called, Was Decisive, Eloquent And Proactive `,
+
+`Oba Oyekan Prioritised The Well-being Of His People And Domain `,
+
+`He Made Significant Contributions To Nation Building. During His Reign, Lagos Witnessed A Progressive Development`, 
+
+`His Philanthropic Activities Were Life-Transforming And Highly Commendable !`,
+
+`Oba Adeyinka Oyekan's Legacies In Lagos And Nigeria Live On`,
+
+`Forever In Our Hearts`,
+
+`Eternal Rest, Kabiyesi`, 
+
+    ]
+},
+{
     image:"Lagosbridge.jpeg",
     title:"History of the past and present Oba of Lagos.",
     description:"Lagos dynasty since 1600.",
